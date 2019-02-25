@@ -15,6 +15,15 @@ $grid-breakpoints: ( //unceremoniously taken from bootstrap 4+ until I find ones
   lg: 992px,
   xl: 1200px
 ) !default;
+
+$rebuild-blue: #0b1933;
+$rebuild-blue-light: #daf5ff;
+$rebuild-white: #f9f9f9;
+$rebuild-baby: #dadafa;
+$rebuild-grey: #dddddd;
+
+$transition-timing: all 150ms ease;
+
 //mixins
 @mixin relative($ratio) {
   font-size: $base-font-size * $ratio;

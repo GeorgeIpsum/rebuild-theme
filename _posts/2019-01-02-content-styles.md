@@ -46,6 +46,15 @@ Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin con
 </html>
 ```
 
+Try out an image:
+
+![alt text](https://via.placeholder.com/300)
+
+or if you want to do an img with custom attributes:
+
+<p align="center">
+  <img src="https://via.placeholder.com/300" alt="alt text">
+</p>
 
 In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
 
@@ -86,6 +95,10 @@ Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet b
 Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc.
+
+### Blockquotes?
+
+> Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
 
 ### Tables
 

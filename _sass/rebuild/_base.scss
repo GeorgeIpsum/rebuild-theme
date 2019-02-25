@@ -9,6 +9,16 @@ dl, dd, ol, ul, figure {
 
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-font-line-height} $base-font;
+  background-color: $rebuild-blue-light;
+  color: $rebuild-white;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -16,15 +26,29 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: 15px; //make this consistent and not grossly large
+  margin-bottom: 20px; //make this consistent and not grossly large
 }
 
 main {
   display: block;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: relative($base-font-size,0.8);
+}
+
+
 ul, ol {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 li {
@@ -37,6 +61,35 @@ li {
 h1,h2,h3,h4,h5,h6 {
   font-weight: $bold-font-weight;
 }
+
+a {
+  transition: $transition-timing;
+  font-weight: $bold-font-weight;
+  color: $rebuild-baby;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($rebuild-baby, 5%);
+  }
+
+  &:hover {
+    color: $rebuild-white;
+  }
+}
+
+blockquote {
+  color: $rebuild-grey;
+  border-left: 4px solid lighten($rebuild-grey, 10%);
+  padding-left: 20px;
+  @include relative(1.125);
+  letter-spacing: 1px;
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
 
 pre,
 code {
@@ -58,5 +111,72 @@ pre {
     border: 0;
     padding-right: 0;
     padding-left: 0;
+    color: $rebuild-blue;
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 20px 0 20px;
+  background-color: $rebuild-blue;
+  min-height: 100vh;
+  box-shadow: 0 -10px 30px -8px #111;
+  border-radius: 4px;
+}
+
+.header {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  padding: 8px 20px 8px 20px;
+  background-color: lighten($rebuild-blue,4%);
+  position: relative;
+  border-radius: 4px;
+}
+
+.orange {
+  color: #FF4500;
+}
+
+.grey {
+  color: $rebuild-grey;
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: currentColor;
+  padding: 5px 3px 2px 5px;
+  vertical-align: text-bottom;
+}
+
+table {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+  color: lighten($rebuild-white, 18%);
+  border-collapse: collapse;
+  border: 1px solid lighten($rebuild-blue, 10%);
+  tr {
+    &:nth-child(even) {
+      background-color: lighten($rebuild-blue, 20%);
+    }
+  }
+  th, td {
+    padding: 6px 10px;
+  }
+  th {
+    background-color: lighten($rebuild-blue, 10%);
+    border: 1px solid darken($rebuild-blue, 15%);
+    border-bottom-color: darken($rebuild-blue, 20%);
+    font-weight: $bold-font-weight;
+  }
+  td {
+    border: 1px solid $rebuild-blue;
   }
 }
