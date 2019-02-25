@@ -1,5 +1,3 @@
 ---
-title: Home
-layout: default
+layout: home
 ---
-# Welcome

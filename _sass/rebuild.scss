@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+//variable defaults
+$base-font: "Rubik" !default;
+$base-font-size: 16px !default;
+$base-font-line-height: 1.4 !default;
+$base-font-weight: 400 !default;
+$light-font-weight: 300 !default;
+$bold-font-weight: 500 !default;
+
+$grid-breakpoints: ( //unceremoniously taken from bootstrap 4+ until I find ones I like better
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+//mixins
+@mixin relative($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+@mixin breakpoint-up($name, $breakpoints: $grid-breakpoints) { //pretty much media-breakpoint-up from bootstrap 4+
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) { //yeah, we mobile-first. sorry
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+// partials
+@import
+  "rebuild/base",
+  "rebuild/layout",
+  "rebuild/syntax-highlighting"
+;
