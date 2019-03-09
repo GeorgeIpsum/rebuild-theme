@@ -143,7 +143,8 @@ pre {
   left: 50%;
   transform: translateX(-50%);
 
-  @media (min-width: 900px) {
+  //we don't use a mixin here because the breakpoint-up mixin only works with the grid breakpoints defined in rebuild.scss
+  @media (min-width: 900px) { 
     width: 900px;
   }
 
