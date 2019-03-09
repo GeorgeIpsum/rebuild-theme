@@ -6,8 +6,10 @@ description: >
 
 show_excerpts: false
 
-minima:
+rebuild:
   date_format: "%b %-d, %Y"
+
+  header_img: "/assets/img/7.jpg"
 
   social_links:
     twitter: ibubeboo

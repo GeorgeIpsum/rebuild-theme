@@ -8,6 +8,10 @@ $base-font-weight: 400 !default;
 $light-font-weight: 300 !default;
 $bold-font-weight: 500 !default;
 
+$title-font: "Zilla Slab";
+$title-font-regular: 500;
+$title-font-bold: 600;
+
 $grid-breakpoints: ( //unceremoniously taken from bootstrap 4+ until I find ones I like better
   xs: 0,
   sm: 576px,
@@ -17,6 +21,7 @@ $grid-breakpoints: ( //unceremoniously taken from bootstrap 4+ until I find ones
 ) !default;
 
 $rebuild-blue: #0b1933;
+$rebuild-blue-dark: darken($rebuild-blue, 8%);
 $rebuild-blue-light: #daf5ff;
 $rebuild-white: #f9f9f9;
 $rebuild-baby: #dadafa;
