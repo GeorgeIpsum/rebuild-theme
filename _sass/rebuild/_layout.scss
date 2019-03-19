@@ -1,11 +1,213 @@
-.rebuild-header {
+/**
+ * Site header
+ */
+ .site-header {
 
 }
 
-.rebuild-title {
+.site-title {
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+}
+
+.site-nav {
+
+
+  .nav-trigger {
+  }
+
+  .menu-icon {
+
+  }
+
+  label[for="nav-trigger"] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  input ~ .trigger {
+    clear: both;
+    display: none;
+  }
+
+  input:checked ~ .trigger {
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .page-link {
+    display: block;
+    padding: 5px 10px;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: static;
+    float: right;
+    border: none;
+    background-color: inherit;
+
+    label[for="nav-trigger"] {
+      display: none;
+    }
+
+    .menu-icon {
+      display: none;
+    }
+
+    input ~ .trigger {
+      display: block;
+    }
+
+    .page-link {
+      display: inline;
+      padding: 0;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      margin-left: auto;
+    }
+  }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+}
+
+.footer-heading {
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper {
+}
+
+.footer-col {
 
 }
 
-.rebuild-nav {
-  
+.footer-col-1,
+.footer-col-2 {
+
+}
+
+.footer-col-3 {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  .footer-col {
+    float: left;
+  }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  flex: 1 0 auto;
+}
+
+.page-heading {
+}
+
+.post-list-heading {
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+  }
+}
+
+.post-meta {
+
+}
+
+.post-link {
+  display: block;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+}
+
+.post-title,
+.post-content h1 {
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @media screen and (min-width: 992px) {
+  }
+}
+
+.post-content {
+
+  h2 {
+
+  }
+
+  h3 {
+
+  }
+
+  h4 {
+
+  }
+}
+
+
+.social-media-list {
+  display: table;
+  margin: 0 auto;
+  li {
+    float: left;
+    margin: 0 5px;
+    &:first-of-type { margin-left: 0 }
+    &:last-of-type { margin-right: 0 }
+    a {
+      display: block;
+    }
+    &:hover .svg-icon { fill: currentColor; }
+  }
+}
+
+
+/**
+ * Grid helpers
+ */
+.one-half {
+
 }

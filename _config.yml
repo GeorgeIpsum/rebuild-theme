@@ -9,11 +9,11 @@ show_excerpts: false
 rebuild:
   date_format: "%b %-d, %Y"
 
-  header_img: "/assets/img/7.jpg"
+  header_img: "/assets/img/header-bg.jpg"
 
   social_links:
-    twitter: ibubeboo
-    github: georgeipsum
+    twitter: twitter
+    github: github
 
 theme: rebuild-theme
 
