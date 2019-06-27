@@ -51,7 +51,8 @@ $transition-timing: all 150ms ease;
 }
 // partials
 @import
-  "rebuild/base",
-  "rebuild/layout",
-  "rebuild/syntax-highlighting"
+  // "rebuild/base",
+  // "rebuild/layout",
+  // "rebuild/syntax-highlighting",
+  "tufte.min.css"
 ;
