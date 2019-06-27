@@ -1,8 +1,12 @@
 title: Your Blog Title
-author: Some Username or name
+subtitle: some subtitle
+author: Some username or name
 email: email@domain.com
 description: >
   Include site description here. Will be used for description meta tag in header and feed.xml site desc.
+
+timezone: America/Los_Angeles
+excerpt_separator: <!--more-->
 
 show_excerpts: false
 
